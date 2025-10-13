@@ -4,11 +4,11 @@ export const Skills = () => {
   const skillCategories = [
     {
       category: "CI/CD & Automation",
-      skills: ["Jenkins", "GitHub Actions", "GitLab CI", "CircleCI", "ArgoCD"]
+      skills: ["Jenkins", "GitHub Actions", "GitLab CI", "ArgoCD"]
     },
     {
       category: "Cloud Platforms",
-      skills: ["AWS", "Azure", "Google Cloud", "DigitalOcean"]
+      skills: ["AWS"]
     },
     {
       category: "Containers & Orchestration",
@@ -16,11 +16,11 @@ export const Skills = () => {
     },
     {
       category: "Infrastructure as Code",
-      skills: ["Terraform", "Ansible", "CloudFormation", "Pulumi"]
+      skills: ["Terraform", "Ansible", "CloudFormation"]
     },
     {
       category: "Monitoring & Logging",
-      skills: ["Prometheus", "Grafana", "ELK Stack", "Datadog", "New Relic"]
+      skills: ["Prometheus", "Grafana", "ELK Stack", "Datadog"]
     },
     {
       category: "Security & Compliance",
@@ -28,7 +28,7 @@ export const Skills = () => {
     },
     {
       category: "Programming & Scripting",
-      skills: ["Python", "Bash", "Go", "YAML", "JSON"]
+      skills: ["Python", "Bash", "YAML", "JSON"]
     },
     {
       category: "Version Control",

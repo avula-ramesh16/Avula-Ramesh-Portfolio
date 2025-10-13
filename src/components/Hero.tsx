@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import profileImage from "@/assets/profile.png";
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -15,6 +16,16 @@ export const Hero = () => {
       </div>
 
       <div className="max-w-5xl mx-auto text-center relative z-10 animate-fade-in">
+        <div className="mb-8 flex justify-center">
+          <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-primary/30 glow-effect">
+            <img 
+              src={profileImage} 
+              alt="Avula Ramesh" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
         <div className="mb-6">
           <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-accent text-sm font-medium mb-4">
             Available for DevOps Opportunities
@@ -55,7 +66,7 @@ export const Hero = () => {
 
         <div className="flex gap-4 justify-center">
           <a 
-            href="https://github.com" 
+            href="https://github.com/avula-ramesh16" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-3 rounded-full border border-primary/30 hover:bg-primary/10 transition-all hover:scale-110"
@@ -63,7 +74,7 @@ export const Hero = () => {
             <Github className="h-6 w-6" />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/avula-ramesh-409161362/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-3 rounded-full border border-primary/30 hover:bg-primary/10 transition-all hover:scale-110"
@@ -71,7 +82,7 @@ export const Hero = () => {
             <Linkedin className="h-6 w-6" />
           </a>
           <a 
-            href="mailto:avularamesh@example.com"
+            href="mailto:avula.ramesh169@gmail.com"
             className="p-3 rounded-full border border-primary/30 hover:bg-primary/10 transition-all hover:scale-110"
           >
             <Mail className="h-6 w-6" />
