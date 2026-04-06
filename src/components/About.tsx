@@ -1,11 +1,16 @@
-import { Award, Clock, Code, Rocket } from "lucide-react";
+import { Clock, Code, Rocket, TrendingUp } from "lucide-react";
 
 export const About = () => {
   const highlights = [
     {
       icon: Clock,
       title: "2 Years",
-      description: "Professional Experience"
+      description: "Associate Cloud Engineer"
+    },
+    {
+      icon: TrendingUp,
+      title: "Upskilled",
+      description: "Self-taught DevOps"
     },
     {
       icon: Rocket,
@@ -16,11 +21,6 @@ export const About = () => {
       icon: Code,
       title: "Infrastructure as Code",
       description: "Terraform & Shell Scripting"
-    },
-    {
-      icon: Award,
-      title: "DevSecOps",
-      description: "Security Integration"
     }
   ];
 
@@ -32,14 +32,15 @@ export const About = () => {
             About Me
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
-            Results-driven DevOps Engineer with 2 years of experience in designing, implementing, 
-            and optimizing CI/CD pipelines, cloud infrastructure, and automated deployment solutions. 
-            Specialized in AWS cloud services, containerization with Docker, Kubernetes orchestration, 
-            and Infrastructure as Code (IaC) using Terraform. Proficient in Jenkins pipeline automation, 
-            GitHub workflows, Linux administration, and Shell scripting. Proven track record in integrating 
-            security practices into DevOps workflows (DevSecOps), reducing deployment time by implementing 
-            automated testing and monitoring solutions. Passionate about leveraging cutting-edge technologies 
-            to streamline operations, enhance system reliability, and drive continuous improvement.
+            Passionate and self-driven DevOps Engineer with 2 years of professional experience as an 
+            Associate Cloud Engineer, where I worked extensively with AWS cloud services, Linux administration, 
+            and infrastructure management. After a career gap of 2.5 years, I dedicated that time to upskilling 
+            myself in modern DevOps practices — mastering CI/CD pipeline automation with Jenkins, containerization 
+            with Docker, Kubernetes orchestration, and Infrastructure as Code using Terraform. During this period, 
+            I built multiple hands-on projects to solidify my skills, including end-to-end CI/CD pipelines, 
+            infrastructure automation, and monitoring stack implementations. Proficient in GitHub workflows, 
+            Shell scripting, and cloud-native technologies. Eager to leverage my combined experience and 
+            self-taught expertise to streamline operations, enhance system reliability, and drive continuous improvement.
           </p>
         </div>
 
