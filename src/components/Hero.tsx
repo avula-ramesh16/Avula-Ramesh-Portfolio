@@ -42,7 +42,7 @@ export const Hero = () => {
         
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
           Transforming infrastructure with automation and scalable cloud solutions. 
-          <span className="text-accent font-semibold"> 4 years</span> of experience in CI/CD, Kubernetes, and DevSecOps.
+          <span className="text-accent font-semibold"> 2 years</span> of experience in CI/CD, Kubernetes, and DevSecOps.
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center mb-12">
@@ -82,7 +82,7 @@ export const Hero = () => {
             <Linkedin className="h-6 w-6" />
           </a>
           <a 
-            href="mailto:avula.ramesh169@gmail.com"
+            href="mailto:avula.ramesh069@gmail.com"
             className="p-3 rounded-full border border-primary/30 hover:bg-primary/10 transition-all hover:scale-110"
           >
             <Mail className="h-6 w-6" />

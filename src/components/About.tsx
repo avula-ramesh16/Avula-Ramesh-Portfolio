@@ -4,7 +4,7 @@ export const About = () => {
   const highlights = [
     {
       icon: Clock,
-      title: "4 Years",
+      title: "2 Years",
       description: "Professional Experience"
     },
     {
@@ -15,7 +15,7 @@ export const About = () => {
     {
       icon: Code,
       title: "Infrastructure as Code",
-      description: "Terraform & Ansible"
+      description: "Terraform & Shell Scripting"
     },
     {
       icon: Award,
@@ -32,13 +32,14 @@ export const About = () => {
             About Me
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
-            Results-driven DevOps Engineer with 4 years of experience in designing, implementing, 
+            Results-driven DevOps Engineer with 2 years of experience in designing, implementing, 
             and optimizing CI/CD pipelines, cloud infrastructure, and automated deployment solutions. 
-            Specialized in containerization, Kubernetes orchestration, and Infrastructure as Code (IaC) 
-            using Terraform and Ansible. Proven track record in integrating security practices into DevOps 
-            workflows (DevSecOps), reducing deployment time by implementing automated testing and monitoring 
-            solutions. Passionate about leveraging cutting-edge technologies to streamline operations, 
-            enhance system reliability, and drive continuous improvement in software delivery processes.
+            Specialized in AWS cloud services, containerization with Docker, Kubernetes orchestration, 
+            and Infrastructure as Code (IaC) using Terraform. Proficient in Jenkins pipeline automation, 
+            GitHub workflows, Linux administration, and Shell scripting. Proven track record in integrating 
+            security practices into DevOps workflows (DevSecOps), reducing deployment time by implementing 
+            automated testing and monitoring solutions. Passionate about leveraging cutting-edge technologies 
+            to streamline operations, enhance system reliability, and drive continuous improvement.
           </p>
         </div>
 
