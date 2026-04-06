@@ -41,8 +41,8 @@ export const Hero = () => {
         </p>
         
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Transforming infrastructure with automation and scalable cloud solutions. 
-          <span className="text-accent font-semibold"> 2 years</span> of experience in CI/CD, Kubernetes, and DevSecOps.
+          Building robust CI/CD pipelines, automating cloud infrastructure, and orchestrating 
+          containers with <span className="text-accent font-semibold">AWS, Docker, Kubernetes, Terraform & Jenkins</span>.
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center mb-12">
