@@ -1,11 +1,16 @@
-import { Award, Clock, Code, Rocket } from "lucide-react";
+import { Clock, Code, Rocket, TrendingUp } from "lucide-react";
 
 export const About = () => {
   const highlights = [
     {
       icon: Clock,
       title: "2 Years",
-      description: "Professional Experience"
+      description: "Associate Cloud Engineer"
+    },
+    {
+      icon: TrendingUp,
+      title: "Upskilled",
+      description: "Self-taught DevOps"
     },
     {
       icon: Rocket,
@@ -16,11 +21,6 @@ export const About = () => {
       icon: Code,
       title: "Infrastructure as Code",
       description: "Terraform & Shell Scripting"
-    },
-    {
-      icon: Award,
-      title: "DevSecOps",
-      description: "Security Integration"
     }
   ];
 
