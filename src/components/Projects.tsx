@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GitBranch, Shield, BarChart3, Cloud } from "lucide-react";
+import { GitBranch, Shield, BarChart3, Cloud, Rocket } from "lucide-react";
 
 export const Projects = () => {
   const projects = [

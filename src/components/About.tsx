@@ -15,7 +15,7 @@ export const About = () => {
     {
       icon: Code,
       title: "Infrastructure as Code",
-      description: "Terraform & Ansible"
+      description: "Terraform & Shell Scripting"
     },
     {
       icon: Award,

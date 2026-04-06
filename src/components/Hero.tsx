@@ -82,7 +82,7 @@ export const Hero = () => {
             <Linkedin className="h-6 w-6" />
           </a>
           <a 
-            href="mailto:avula.ramesh169@gmail.com"
+            href="mailto:avula.ramesh069@gmail.com"
             className="p-3 rounded-full border border-primary/30 hover:bg-primary/10 transition-all hover:scale-110"
           >
             <Mail className="h-6 w-6" />

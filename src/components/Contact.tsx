@@ -68,7 +68,7 @@ export const Contact = () => {
           <Button 
             size="lg"
             className="gradient-bg text-white font-semibold glow-effect"
-            onClick={() => window.location.href = 'mailto:avula.ramesh169@gmail.com'}
+            onClick={() => window.location.href = 'mailto:avula.ramesh069@gmail.com'}
           >
             <Mail className="mr-2 h-5 w-5" />
             Send Me a Message

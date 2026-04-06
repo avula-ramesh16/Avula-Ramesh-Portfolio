@@ -3,20 +3,24 @@ import { Badge } from "@/components/ui/badge";
 export const Skills = () => {
   const skillCategories = [
     {
-      category: "CI/CD & Automation",
-      skills: ["Jenkins", "GitHub Actions", "GitLab CI", "ArgoCD"]
-    },
-    {
-      category: "Cloud Platforms",
-      skills: ["AWS"]
+      category: "Cloud & Infrastructure",
+      skills: ["AWS", "EC2", "S3", "VPC", "IAM", "EKS", "Lambda", "CloudWatch"]
     },
     {
       category: "Containers & Orchestration",
       skills: ["Docker", "Kubernetes", "EKS", "Helm", "Docker Compose"]
     },
     {
+      category: "CI/CD & Automation",
+      skills: ["Jenkins", "GitHub Actions", "GitLab CI", "ArgoCD"]
+    },
+    {
       category: "Infrastructure as Code",
-      skills: ["Terraform", "Ansible", "CloudFormation"]
+      skills: ["Terraform", "CloudFormation"]
+    },
+    {
+      category: "OS & Scripting",
+      skills: ["Linux", "Shell Scripting", "Bash", "Python", "YAML"]
     },
     {
       category: "Monitoring & Logging",
@@ -25,10 +29,6 @@ export const Skills = () => {
     {
       category: "Security & Compliance",
       skills: ["SonarQube", "Trivy", "Vault", "AWS IAM", "Security Scanning"]
-    },
-    {
-      category: "Programming & Scripting",
-      skills: ["Python", "Bash", "YAML", "JSON"]
     },
     {
       category: "Version Control",
