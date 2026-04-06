@@ -5,25 +5,32 @@ import { GitBranch, Shield, BarChart3, Cloud } from "lucide-react";
 export const Projects = () => {
   const projects = [
     {
+      icon: Rocket,
+      title: "End-to-End DevOps CI/CD Pipeline",
+      description: "Built a complete end-to-end CI/CD pipeline integrating Kubernetes and Terraform automation. Automated infrastructure provisioning, container orchestration, and application deployment with Jenkins, GitHub, Docker, and AWS for seamless delivery.",
+      skills: ["Jenkins", "GitHub", "Docker", "Kubernetes", "Terraform", "AWS", "Shell Scripting"],
+      color: "from-blue-500 to-cyan-500"
+    },
+    {
       icon: GitBranch,
       title: "CI/CD Pipeline for Microservices",
       description: "Designed and implemented a complete CI/CD pipeline using Jenkins, GitHub, Docker, and Kubernetes on AWS. Automated build, test, and deployment processes for microservices architecture.",
-      skills: ["Jenkins", "GitHub", "Docker", "Kubernetes", "AWS", "Microservices", "Automation"],
-      color: "from-blue-500 to-cyan-500"
+      skills: ["Jenkins", "GitHub", "Docker", "Kubernetes", "AWS", "Linux", "Automation"],
+      color: "from-purple-500 to-pink-500"
     },
     {
       icon: Cloud,
       title: "Infrastructure Automation using Terraform",
       description: "Developed comprehensive Terraform modules to automate the provisioning of complete AWS infrastructure including VPC, subnets, security groups, EC2 instances, and load balancers.",
-      skills: ["Terraform", "AWS", "IaC", "VPC", "EC2", "Networking", "Automation"],
-      color: "from-purple-500 to-pink-500"
+      skills: ["Terraform", "AWS", "IaC", "VPC", "EC2", "Shell Scripting", "Automation"],
+      color: "from-green-500 to-emerald-500"
     },
     {
       icon: BarChart3,
       title: "Monitoring Stack Implementation",
       description: "Configured and deployed a complete observability stack using Prometheus and Grafana to monitor EKS workloads. Created custom dashboards and alerting rules for proactive incident management.",
       skills: ["Prometheus", "Grafana", "EKS", "Monitoring", "Alerting", "Kubernetes", "Observability"],
-      color: "from-green-500 to-emerald-500"
+      color: "from-sky-500 to-blue-500"
     },
     {
       icon: Shield,
