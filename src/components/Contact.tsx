@@ -26,7 +26,7 @@ export const Contact = () => {
                 Email
               </h3>
               <p className="text-sm text-muted-foreground">
-                avula.ramesh169@gmail.com
+                avula.ramesh069@gmail.com
               </p>
             </a>
 
