@@ -16,7 +16,7 @@ export const Contact = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <a 
-              href="mailto:avula.ramesh169@gmail.com"
+              href="mailto:avula.ramesh069@gmail.com"
               className="bg-card border border-primary/20 rounded-xl p-6 card-hover group"
             >
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full gradient-bg mb-4 glow-effect">
