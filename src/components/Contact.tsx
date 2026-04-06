@@ -31,7 +31,7 @@ export const Contact = () => {
             </a>
 
             <a 
-              href="https://www.linkedin.com/in/avula-ramesh-409161362/"
+              href="https://www.linkedin.com/in/avula-ramesh-817211363/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-card border border-primary/20 rounded-xl p-6 card-hover group"
