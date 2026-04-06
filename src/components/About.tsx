@@ -4,7 +4,7 @@ export const About = () => {
   const highlights = [
     {
       icon: Clock,
-      title: "4 Years",
+      title: "2 Years",
       description: "Professional Experience"
     },
     {
