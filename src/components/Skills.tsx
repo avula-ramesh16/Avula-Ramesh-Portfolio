@@ -12,7 +12,7 @@ export const Skills = () => {
     },
     {
       category: "CI/CD & Automation",
-      skills: ["Jenkins", "GitHub Actions", "GitLab CI", "ArgoCD"]
+      skills: ["Jenkins", "GitHub Actions", "ArgoCD"]
     },
     {
       category: "Infrastructure as Code",
@@ -20,7 +20,7 @@ export const Skills = () => {
     },
     {
       category: "OS & Scripting",
-      skills: ["Linux", "Shell Scripting", "Bash", "Python", "YAML"]
+      skills: ["Linux", "Shell Scripting", "Python"]
     },
     {
       category: "Monitoring & Logging",
@@ -28,11 +28,11 @@ export const Skills = () => {
     },
     {
       category: "Security & Compliance",
-      skills: ["SonarQube", "Trivy", "Vault", "AWS IAM", "Security Scanning"]
+      skills: ["SonarQube", "Trivy", "AWS IAM", "Security Scanning"]
     },
     {
       category: "Version Control",
-      skills: ["Git", "GitHub", "GitLab", "Bitbucket"]
+      skills: ["Git", "GitHub"]
     }
   ];
 

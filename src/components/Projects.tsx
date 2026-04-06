@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GitBranch, Shield, BarChart3, Cloud, Rocket } from "lucide-react";
+import { GitBranch, BarChart3, Cloud, Rocket } from "lucide-react";
 
 export const Projects = () => {
   const projects = [
@@ -31,13 +31,6 @@ export const Projects = () => {
       description: "Configured and deployed a complete observability stack using Prometheus and Grafana to monitor EKS workloads. Created custom dashboards and alerting rules for proactive incident management.",
       skills: ["Prometheus", "Grafana", "EKS", "Monitoring", "Alerting", "Kubernetes", "Observability"],
       color: "from-sky-500 to-blue-500"
-    },
-    {
-      icon: Shield,
-      title: "DevSecOps Integration",
-      description: "Integrated security scanning tools including SonarQube for code quality analysis and Trivy for container vulnerability scanning into Jenkins CI/CD pipeline. Implemented security gates and compliance checks.",
-      skills: ["SonarQube", "Trivy", "Jenkins", "Security", "DevSecOps", "Compliance", "Container Security"],
-      color: "from-red-500 to-orange-500"
     }
   ];
 
