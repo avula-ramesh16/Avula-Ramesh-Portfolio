@@ -1,36 +1,35 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GitBranch, BarChart3, Cloud, Rocket } from "lucide-react";
+import { Plane, Globe, ShoppingCart } from "lucide-react";
 
 export const Projects = () => {
   const projects = [
     {
-      icon: Rocket,
-      title: "End-to-End DevOps CI/CD Pipeline",
-      description: "Built a complete end-to-end CI/CD pipeline integrating Kubernetes and Terraform automation. Automated infrastructure provisioning, container orchestration, and application deployment with Jenkins, GitHub, Docker, and AWS for seamless delivery.",
-      skills: ["Jenkins", "GitHub", "Docker", "Kubernetes", "Terraform", "AWS", "Shell Scripting"],
+      icon: Plane,
+      title: "Global Travel Booking & Reservation Platform",
+      client: "Amadeus Software Labs",
+      description:
+        "Designed, automated, and maintained cloud infrastructure for a global travel booking platform serving airlines, travel agencies, and OTAs. Built highly available AWS + EKS infrastructure with reusable Terraform modules, Jenkins/GitHub Actions CI/CD, Helm-based deployments, and full observability with Prometheus, Grafana, CloudWatch, and ELK.",
+      skills: ["AWS", "EKS", "Terraform", "Jenkins", "GitHub Actions", "Docker", "Helm", "Prometheus", "Grafana", "ELK"],
       color: "from-blue-500 to-cyan-500"
     },
     {
-      icon: GitBranch,
-      title: "CI/CD Pipeline for Microservices",
-      description: "Designed and implemented a complete CI/CD pipeline using Jenkins, GitHub, Docker, and Kubernetes on AWS. Automated build, test, and deployment processes for microservices architecture.",
-      skills: ["Jenkins", "GitHub", "Docker", "Kubernetes", "AWS", "Linux", "Automation"],
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      icon: Cloud,
-      title: "Infrastructure Automation using Terraform",
-      description: "Developed comprehensive Terraform modules to automate the provisioning of complete AWS infrastructure including VPC, subnets, security groups, EC2 instances, and load balancers.",
-      skills: ["Terraform", "AWS", "IaC", "VPC", "EC2", "Shell Scripting", "Automation"],
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      icon: BarChart3,
-      title: "Monitoring Stack Implementation",
-      description: "Configured and deployed a complete observability stack using Prometheus and Grafana to monitor EKS workloads. Created custom dashboards and alerting rules for proactive incident management.",
-      skills: ["Prometheus", "Grafana", "EKS", "Monitoring", "Alerting", "Kubernetes", "Observability"],
+      icon: Globe,
+      title: "Airline API Integration & Developer Platform",
+      client: "Amadeus Software Labs",
+      description:
+        "Built and supported a secure cloud-native platform hosting airline REST APIs consumed by travel agencies, booking platforms, and third parties. Automated multi-environment provisioning with Terraform, delivered API services via EKS + Helm, and integrated SonarQube, Trivy, and dependency scanning into CI/CD for secure releases.",
+      skills: ["AWS", "EKS", "Terraform", "GitHub Actions", "SonarQube", "Trivy", "Helm", "Route53", "ACM", "Python"],
       color: "from-sky-500 to-blue-500"
+    },
+    {
+      icon: ShoppingCart,
+      title: "Global B2B E-Commerce Platform",
+      client: "Schneider Electric",
+      description:
+        "Supported cloud infrastructure and DevOps operations for Schneider Electric's global B2B e-commerce platform on AWS with microservices on Kubernetes. Built Jenkins pipelines, automated provisioning with Terraform, containerized enterprise apps, and configured centralized monitoring & logging with Prometheus, Grafana, and ELK.",
+      skills: ["AWS", "Kubernetes", "Jenkins", "Terraform", "Docker", "Helm", "Linux", "Bash", "Prometheus", "ELK"],
+      color: "from-purple-500 to-pink-500"
     }
   ];
 
@@ -38,21 +37,15 @@ export const Projects = () => {
     <section id="projects" className="py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
-            Featured Projects
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">Featured Projects</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A showcase of my DevOps implementations and infrastructure automation projects
+            Enterprise DevOps and cloud infrastructure projects delivered for global clients.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card 
-              key={index}
-              className="bg-card border-primary/20 card-hover group overflow-hidden"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+            <Card key={index} className="bg-card border-primary/20 card-hover group overflow-hidden">
               <div className={`h-2 bg-gradient-to-r ${project.color}`} />
               <CardHeader>
                 <div className="flex items-start gap-4">
@@ -60,9 +53,10 @@ export const Projects = () => {
                     <project.icon className="h-6 w-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <CardTitle className="text-xl mb-2 group-hover:text-accent transition-colors">
+                    <CardTitle className="text-xl mb-1 group-hover:text-accent transition-colors">
                       {project.title}
                     </CardTitle>
+                    <p className="text-sm text-accent/80">Client: {project.client}</p>
                   </div>
                 </div>
               </CardHeader>
@@ -71,12 +65,8 @@ export const Projects = () => {
                   {project.description}
                 </CardDescription>
                 <div className="flex flex-wrap gap-2">
-                  {project.skills.map((skill, skillIndex) => (
-                    <Badge 
-                      key={skillIndex}
-                      variant="secondary"
-                      className="bg-primary/10 text-accent border-primary/20 hover:bg-primary/20"
-                    >
+                  {project.skills.map((skill, i) => (
+                    <Badge key={i} variant="secondary" className="bg-primary/10 text-accent border-primary/20 hover:bg-primary/20">
                       {skill}
                     </Badge>
                   ))}
