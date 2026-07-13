@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Plane, Globe, ShoppingCart } from "lucide-react";
+import { Plane, Globe, ShoppingCart, GitBranch, Cloud } from "lucide-react";
 
 export const Projects = () => {
   const projects = [
@@ -30,6 +30,24 @@ export const Projects = () => {
         "Supported cloud infrastructure and DevOps operations for Schneider Electric's global B2B e-commerce platform on AWS with microservices on Kubernetes. Built Jenkins pipelines, automated provisioning with Terraform, containerized enterprise apps, and configured centralized monitoring & logging with Prometheus, Grafana, and ELK.",
       skills: ["AWS", "Kubernetes", "Jenkins", "Terraform", "Docker", "Helm", "Linux", "Bash", "Prometheus", "ELK"],
       color: "from-purple-500 to-pink-500"
+    },
+    {
+      icon: GitBranch,
+      title: "End-to-End DevOps CI/CD Pipeline with Kubernetes",
+      client: "Hands-on Project",
+      description:
+        "Built a complete CI/CD pipeline using Jenkins integrated with GitHub, Docker, and Kubernetes. Automated infrastructure provisioning with Terraform, containerized the application with Docker, and deployed it to an AWS EKS cluster. Implemented monitoring with Prometheus and Grafana dashboards, and configured AWS ALB ingress with auto-scaling for high availability — improving deployment speed and ensuring consistent release cycles.",
+      skills: ["Jenkins", "GitHub", "Docker", "Kubernetes", "AWS EKS", "Terraform", "Prometheus", "Grafana", "ALB Ingress"],
+      color: "from-green-500 to-emerald-500"
+    },
+    {
+      icon: Cloud,
+      title: "Production-Grade Terraform CI/CD Pipeline with AWS & GitHub Actions",
+      client: "Hands-on Project",
+      description:
+        "Designed and implemented an end-to-end infrastructure automation setup using Terraform and AWS following real-world DevOps best practices. Built a modular Terraform architecture (VPC, EC2) with multi-environment support (dev/staging/prod), remote state on S3 + DynamoDB locking, and a GitHub Actions CI/CD pipeline. Used OIDC-based authentication (no static AWS keys) and a Plan → Manual Approval → Apply workflow with drift-aware deployments for safe production changes.",
+      skills: ["Terraform", "AWS", "GitHub Actions", "OIDC", "S3", "DynamoDB", "VPC", "EC2", "IAM"],
+      color: "from-orange-500 to-red-500"
     }
   ];
 
