@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, ChevronDown, MapPin } from "lucide-react";
 import profileImage from "@/assets/profile.png";
 
 export const Hero = () => {
@@ -9,7 +9,6 @@ export const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
-      {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
@@ -18,11 +17,7 @@ export const Hero = () => {
       <div className="max-w-5xl mx-auto text-center relative z-10 animate-fade-in">
         <div className="mb-8 flex justify-center">
           <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-primary/30 glow-effect">
-            <img 
-              src={profileImage} 
-              alt="Avula Ramesh" 
-              className="w-full h-full object-cover"
-            />
+            <img src={profileImage} alt="Avula Ramesh" className="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -31,30 +26,35 @@ export const Hero = () => {
             Available for DevOps Opportunities
           </span>
         </div>
-        
+
         <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
           Avula Ramesh
         </h1>
-        
+
         <p className="text-2xl md:text-3xl text-muted-foreground mb-4">
           DevOps Engineer
         </p>
-        
-        <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Building robust CI/CD pipelines, automating cloud infrastructure, and orchestrating 
-          containers with <span className="text-accent font-semibold">AWS, Docker, Kubernetes, Terraform & Jenkins</span>.
+
+        <div className="flex items-center justify-center gap-2 text-muted-foreground mb-6">
+          <MapPin className="h-4 w-4 text-accent" />
+          <span>Bangalore, India</span>
+        </div>
+
+        <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <span className="text-accent font-semibold">5 years</span> of experience designing, automating, and supporting
+          AWS-based cloud infrastructure with <span className="text-accent font-semibold">Kubernetes, Terraform, Docker, Jenkins & GitHub Actions</span>.
         </p>
 
         <div className="flex flex-wrap gap-4 justify-center mb-12">
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="gradient-bg text-white font-semibold glow-effect"
             onClick={() => scrollToSection("projects")}
           >
             View Projects
           </Button>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             variant="outline"
             className="border-primary/50 hover:bg-primary/10"
             onClick={() => scrollToSection("contact")}
@@ -65,35 +65,23 @@ export const Hero = () => {
         </div>
 
         <div className="flex gap-4 justify-center">
-          <a 
-            href="https://github.com/avula-ramesh16" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="p-3 rounded-full border border-primary/30 hover:bg-primary/10 transition-all hover:scale-110"
-          >
+          <a href="https://github.com/avula-ramesh16" target="_blank" rel="noopener noreferrer"
+            className="p-3 rounded-full border border-primary/30 hover:bg-primary/10 transition-all hover:scale-110">
             <Github className="h-6 w-6" />
           </a>
-          <a 
-            href="https://www.linkedin.com/in/avula-ramesh-817211363/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="p-3 rounded-full border border-primary/30 hover:bg-primary/10 transition-all hover:scale-110"
-          >
+          <a href="https://www.linkedin.com/in/avula-ramesh-817211363/" target="_blank" rel="noopener noreferrer"
+            className="p-3 rounded-full border border-primary/30 hover:bg-primary/10 transition-all hover:scale-110">
             <Linkedin className="h-6 w-6" />
           </a>
-          <a 
-            href="mailto:avula.ramesh069@gmail.com"
-            className="p-3 rounded-full border border-primary/30 hover:bg-primary/10 transition-all hover:scale-110"
-          >
+          <a href="mailto:avularamesh600@gmail.com"
+            className="p-3 rounded-full border border-primary/30 hover:bg-primary/10 transition-all hover:scale-110">
             <Mail className="h-6 w-6" />
           </a>
         </div>
       </div>
 
-      <button 
-        onClick={() => scrollToSection("about")}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
-      >
+      <button onClick={() => scrollToSection("about")}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <ChevronDown className="h-8 w-8 text-accent" />
       </button>
     </section>
